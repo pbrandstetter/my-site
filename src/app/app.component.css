@@ -1,0 +1,111 @@
+.content {
+  display: flex;
+  min-height: 100vh;
+}
+.content p {
+  font-size: 4vh;
+}
+.coder {
+  background-color: #f33333;
+  transition-duration: 350ms;
+}
+.coder:hover {
+  background-color: #aa2727;
+}
+.coder:hover .icon {
+  background-color: #910f0f;
+}
+.coder .icon {
+  background-color: #da2020;
+}
+.coder .icon img {
+  width: 10vh;
+  height: auto;
+}
+.musician {
+  background-color: #3333f3;
+  transition-duration: 350ms;
+}
+.musician:hover {
+  background-color: #2727aa;
+}
+.musician:hover .icon {
+  background-color: #1c1c91;
+}
+.musician .icon {
+  background-color: #2828da;
+}
+.musician .icon img {
+  width: 8vh;
+  height: auto;
+}
+.icon {
+  height: 25vh;
+  width: 25vh;
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.icon:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.icon:hover img {
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+.devider {
+  position: fixed;
+  text-align: center;
+  background-color: #5a1b1b;
+}
+@media only screen and (min-width: 960px) {
+  .devider {
+    top: -5%;
+    left: 50%;
+    height: 110%;
+    -moz-transform: rotate(5deg) translateX(-50%);
+    -o-transform: rotate(5deg) translateX(-50%);
+    -ms-transform: rotate(5deg) translateX(-50%);
+    -webkit-transform: rotate(5deg) translateX(-50%);
+    transform: rotate(5deg) translateX(-50%);
+    width: 7vw;
+  }
+  .devider p {
+    font-size: 3.5vh;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .devider {
+    left: -5%;
+    top: 50%;
+    width: 110%;
+    -moz-transform: rotate(-3deg) translateY(-50%);
+    -o-transform: rotate(-3deg) translateY(-50%);
+    -ms-transform: rotate(-3deg) translateY(-50%);
+    -webkit-transform: rotate(-3deg) translateY(-50%);
+    transform: rotate(-3deg) translateY(-50%);
+    height: 10vh;
+  }
+  .devider p {
+    margin: 0;
+    letter-spacing: 1vw;
+    font-size: 3.5vw;
+  }
+}
+.devider p {
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+  font-weight: bold;
+}
