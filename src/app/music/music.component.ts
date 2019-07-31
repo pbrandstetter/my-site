@@ -10,7 +10,7 @@ export class MusicComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("cool")
+    console.log('cool');
   }
 
 }
