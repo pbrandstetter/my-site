@@ -17,7 +17,7 @@
   text-align: center;
   @media only screen and (min-width: 960px) {
     top: -5%;
-    left: 10%;
+    right: 10%;
     height: 110%;
     @include transform(rotate(5deg) translateX(-50%));
     width: 7vw;
@@ -46,9 +46,9 @@
   background-color: rgb(90, 27, 27);
 }
 
-.coder {
-  left: 0;
-  background-color: rgb(243, 51, 51);
+.musician {
+  right: 0;
+  background-color: rgb(51, 51, 243);
   .icon {
     img {
       width: 30%;
