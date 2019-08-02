@@ -4,7 +4,7 @@ import { MusicComponent } from './music/music.component';
 import { HomeComponent } from './home/home.component';
 import { CodingComponent } from './coding/coding.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
   { path: 'music', component: MusicComponent },
