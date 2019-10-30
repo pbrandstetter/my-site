@@ -88,7 +88,17 @@
   display: flex;
   min-height: 100vh;
   p {
+    text-align: center;
+    margin: 1vh 0;
+  }
+
+  .description {
     font-size: 4vh;
+  }
+
+  .name {
+    margin: 3vh 0;
+    font-size: 5vh;
   }
 }
 
@@ -165,6 +175,7 @@
     width: 110%;
     @include transform(rotate(-3deg) translateY(-50%));
     height: 10vh;
+    // min-height: 55px;
     p {
       margin: 0;
       letter-spacing: 1vw;
