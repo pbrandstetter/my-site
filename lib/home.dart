@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:pbrandstetter/projects.dart';
 import 'package:pbrandstetter/widgets/theme_inherited_widget.dart';
 
 import 'about.dart';
+import 'career.dart';
 import 'config/assets.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,11 +12,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 2;
   static List<Widget> tabWidgets = <Widget>[
     AboutTab(),
-    // BlogTab(),
-    // ProjectsTab()
+    CareerTab(),
+    ProjectsTab()
   ];
 
   @override
@@ -26,6 +28,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text('brandstetter.dev'),
         actions: <Widget>[
           IconButton(
             icon: ThemeSwitcher.of(context).isDarkModeOn ? Icon(Icons.wb_sunny) : Image.asset(Assets.moon, height: 20, width: 20,),
@@ -40,11 +43,11 @@ class _HomePageState extends State<HomePage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.account_circle),
-            title: Text('About'),
+            title: Text('Home'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.business),
-            title: Text('Career'),
+            title: Text('About'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.developer_mode),

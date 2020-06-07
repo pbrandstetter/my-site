@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pbrandstetter/config/assets.dart';
-import 'dart:html' as html;
+import 'package:universal_html/html.dart' as html;
+import 'package:url_launcher/url_launcher.dart';
 
 import 'config/constants.dart';
 
@@ -51,8 +53,7 @@ class AboutTab extends StatelessWidget {
                       child: Image.asset(Assets.github),
                     ),
                     label: Text('Github'),
-                    onPressed: () => html.window
-                        .open(Constants.PROFILE_GITHUB, 'pbrandstetter'),
+                    onPressed: () => _launchUrl(Constants.PROFILE_GITHUB),
                   ),
                   FlatButton.icon(
                     icon: SizedBox(
@@ -61,8 +62,7 @@ class AboutTab extends StatelessWidget {
                       child: Image.asset(Assets.twitter),
                     ),
                     label: Text('Twitter'),
-                    onPressed: () => html.window
-                        .open(Constants.PROFILE_TWITTER, 'pbrandstetter'),
+                    onPressed: () => _launchUrl(Constants.PROFILE_TWITTER),
                   ),
                   FlatButton.icon(
                     icon: SizedBox(
@@ -71,8 +71,7 @@ class AboutTab extends StatelessWidget {
                       child: Image.asset(Assets.instagram),
                     ),
                     label: Text('Instagram'),
-                    onPressed: () => html.window
-                        .open(Constants.PROFILE_INSTAGRAM, 'pbrandstetter'),
+                    onPressed: () => _launchUrl(Constants.PROFILE_INSTAGRAM),
                   ),
                 ],
               ),
@@ -82,4 +81,13 @@ class AboutTab extends StatelessWidget {
       ),
     );
   }
+}
+
+_launchUrl(String url) async {
+  if(kIsWeb) {
+    html.window
+      .open(url, 'pbrandstetter');
+    } else if (await canLaunch(Constants.PROFILE_TWITTER)) {
+      launch(url);
+    }
 }
