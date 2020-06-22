@@ -6,7 +6,7 @@ darkTheme(context) {
     primaryColor: Colors.black,
     accentColor: Colors.blue,
     disabledColor: Colors.grey,
-    cardColor: Color(0xff1f2124),
+    cardColor: Colors.blueGrey,
     canvasColor: Colors.black,
     brightness: Brightness.dark,
     buttonTheme: Theme.of(context).buttonTheme.copyWith(

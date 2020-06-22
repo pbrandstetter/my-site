@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pbrandstetter/config/assets.dart';
@@ -84,10 +85,9 @@ class AboutTab extends StatelessWidget {
 }
 
 _launchUrl(String url) async {
-  if(kIsWeb) {
-    html.window
-      .open(url, 'pbrandstetter');
-    } else if (await canLaunch(Constants.PROFILE_TWITTER)) {
-      launch(url);
-    }
+  if (kIsWeb) {
+    html.window.open(url, 'pbrandstetter');
+  } else if (await canLaunch(Constants.PROFILE_TWITTER)) {
+    launch(url);
+  }
 }

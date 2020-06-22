@@ -4,4 +4,5 @@ class Assets {
   static const twitter = 'assets/twitter.png';
   static const instagram = 'assets/instagram.png';
   static const moon = 'assets/moon.png';
+  static const tweet = 'assets/tweets/tweet.json';
 }

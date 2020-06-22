@@ -47,7 +47,7 @@ class CareerTab extends StatelessWidget {
                         style: DefaultTextStyle.of(context).style,
                         children: <TextSpan>[
                           TextSpan(
-                            text: 'Speaking flutent German and English',
+                            text: 'Speaking fluent German and English',
                           ),
                           TextSpan(text: '\n\n'),
                           TextSpan(
