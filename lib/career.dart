@@ -132,7 +132,7 @@ class CareerTab extends StatelessWidget {
                                 // style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               TextSpan(
-                                text: 'Parademics at Austrian Red Cross',
+                                text: 'Paramedics at Austrian Red Cross',
                               ),
                             ],
                           ),
