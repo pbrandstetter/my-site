@@ -2,6 +2,14 @@ import 'package:flutter/material.dart';
 darkTheme(context) {
   return ThemeData(
     // fontFamily: 'GoogleSansRegular',
+    textTheme: TextTheme(
+      bodyText1: TextStyle(
+        fontSize: 15
+      ),
+      bodyText2: TextStyle(
+        fontSize: 15
+      ),
+    ),
     primarySwatch: Colors.blue,
     primaryColor: Colors.black,
     accentColor: Colors.blue,
@@ -21,6 +29,14 @@ darkTheme(context) {
 lightTheme(context) {
   return ThemeData(
     //  fontFamily: 'GoogleSansRegular',
+    textTheme: TextTheme(
+      bodyText1: TextStyle(
+        fontSize: 15
+      ),
+      bodyText2: TextStyle(
+        fontSize: 15
+      ),
+    ),
     primarySwatch: Colors.blue,
     primaryColor: Colors.white,
     accentColor: Colors.blue,
