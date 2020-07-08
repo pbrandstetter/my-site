@@ -49,10 +49,10 @@ class _HomePageState extends State<HomePage> {
             icon: Icon(Icons.business),
             title: Text('About'),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.developer_mode),
-            title: Text('Projects'),
-          )
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.developer_mode),
+          //   title: Text('Projects'),
+          // )
         ],
         currentIndex: _selectedIndex,
         onTap: (index) => setState(() => _selectedIndex = index),
