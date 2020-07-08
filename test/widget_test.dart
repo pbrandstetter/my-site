@@ -10,8 +10,9 @@ import 'package:pbrandstetter/about.dart';
 
 void main() {
   testWidgets('Widget shows name', (WidgetTester tester) async {
+    AboutTab about = new AboutTab();
     // Build our app and trigger a frame.
-    await tester.pumpWidget(AboutTab());
+    await tester.pumpWidget(about);
 
     // Verify that our counter starts at 0.
     expect(find.text('Philipp Brandstetter'), findsOneWidget);
