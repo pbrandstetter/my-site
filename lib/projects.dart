@@ -1,6 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:pbrandstetter/config/assets.dart';
 import 'package:tweet_ui/models/api/tweet.dart';
 import 'package:tweet_ui/tweet_ui.dart';
@@ -21,17 +22,7 @@ class ProjectsTab extends StatelessWidget {
     return Scaffold(
       body: Container(
         margin: EdgeInsets.only(left: 15, right: 15),
-        child:
-        HtmlWidget(
-            kHtml,
-            webView: true,
-        ),
-        // ListView(
-        //   padding: EdgeInsets.only(top: 15),
-        //   children: <Widget>[
-        //     getTweetWidgets(darkMode),
-        //   ],
-        // ),
+        child: getTweetWidgets(darkMode)
       ),
     );
   }
@@ -46,7 +37,7 @@ class ProjectsTab extends StatelessWidget {
 
   Future<Widget> getTweets(bool darkMode) async {
     var response = await http.get(
-        "https://raw.githubusercontent.com/schibsted/tweet_ui/master/example/assets/tweet_examples/tweet_1_photo.json");
+        "https://api.twitter.com/2/tweets?ids=1280845533024829440", headers: {"Authorization": "Bearer jHSr1jHNsZdUpDrwjwka7M8WD"});
     var jsonResponse;
     if (response.statusCode == 200) {
       jsonResponse = response.body.toString();
