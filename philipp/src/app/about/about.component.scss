@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap");
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Overpass Mono";
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+
+.my-img {
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 992px) {
+  .my-img {
+    position: absolute;
+    max-width: 250px;
+    left: 10vmax;
+    top: 5vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .my-img {
+    padding: 10px 100px;
+    max-width: calc(100% - 200px);
+    max-height: 250px;
+  }
+}
+
+p {
+  font-family: "Comfortaa";
+  font-size: medium;
+}
+
+.social {
+  svg {
+    width: 45px;
+    margin: 3vmax;
+  }
+  #linkedin {
+    background-color: white;
+    border-radius: 5px;
+  }
+}
