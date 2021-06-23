@@ -1,3 +1,41 @@
-.content {
-    
+@media screen and (max-width: 992px) {
+  .content {
+    margin: 5vh 2vw;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    margin: 20vh 20vw 5vh 20vw;
+  }
+}
+
+table {
+  margin-left: 2vw;
+  // width: 100%;
+  tr {
+    height: 50px;
+    td {
+      padding: 2px;
+    }
+  }
+  .company-logo {
+    &:hover {
+      img {
+        width: 50px;
+      }
+    }
+    img {
+      width: 20px;
+      transition: width 0.3s ease-in-out;
+      &:focus {
+        width: 50px;
+      }
+    }
+  }
+  .title {
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
 }

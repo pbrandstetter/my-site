@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import "~@angular/material/theming";
@@ -46,11 +49,18 @@ $philipp-dark-theme: mat-dark-theme(
 
 /* You can add global styles to this file, and also import other style files */
 
+* :not(img) {
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 html,
 body {
   height: 100%;
 }
 body {
+  * {
+    font-family: "Comfortaa";
+  }
   margin: 0;
   color: #f1e4d2;
   background-color: #1e1e1e;

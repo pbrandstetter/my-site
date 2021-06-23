@@ -1,0 +1,28 @@
+{
+  "experiences": [
+    {
+      "title": "HTL Perg",
+      "desc": "Higher Technical College for IT",
+      "time": "2015 - 2020",
+      "img": "/assets/htl.png"
+    },
+    {
+      "title": "LiSEC",
+      "desc": "Internal IT support (Internship)",
+      "time": "July 2018",
+      "img": "/assets/lisec.svg"
+    },
+    {
+      "title": "Dynatrace (Internship)",
+      "desc": "Working on our diploma thesis COSTTA",
+      "time": "July and August 2019",
+      "img": "/assets/dynatrace.png"
+    },
+    {
+      "title": "Dynatrace",
+      "desc": "Junior Backend Developer",
+      "time": "since September 2021",
+      "img": "/assets/dynatrace.png"
+    }
+  ]
+}
