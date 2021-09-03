@@ -1,11 +1,11 @@
 <div class="content">
   <h2>Experience</h2>
-  <table>
-    <tr *ngFor="let item of experiences">
-        <td class="company-logo"><img src="{{item.img}}" alt="{{item.title}} Logo" /></td>
-        <td class="title">{{item.title}}</td>
-        <td class="description">{{item.desc}}</td>
-        <td class="time">{{item.time}}</td>
-    </tr>
-  </table>
+  <div class="table">
+    <div class="row" *ngFor="let item of experiences">
+        <div class="cell company-logo"><img src="{{item.img}}" alt="{{item.title}} Logo" /></div>
+        <div class="cell title">{{item.title}}</div>
+        <div class="cell description">{{item.desc}}</div>
+        <div class="cell time">{{item.time}}</div>
+    </div>
+  </div>
 </div>

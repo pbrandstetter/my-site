@@ -1,32 +1,53 @@
-@media screen and (max-width: 992px) {
-  .content {
-    margin: 5vh 2vw;
-    max-width: 100%;
+// @media screen and (max-width: 992px) {
+//   .content {
+//     margin: 50vh 2vw;
+//     max-width: 100%;
+//   }
+// }
+
+// @media screen and (min-width: 992px) {
+//   .content {
+//     margin: 20vh 20vw 20vh 20vw;
+//   }
+// }
+
+.content {
+  @media screen and (max-width: 992px) {
+    margin: 10vh 2vw;
   }
+  @media screen and (min-width: 992px) {
+    margin: 10vh 10vh 10vh calc(50% - 30vw);
+  }
+  // max-width: 100%;
 }
 
-@media screen and (min-width: 992px) {
-  .content {
-    margin: 20vh 20vw 5vh 20vw;
-  }
-}
-
-table {
+.table {
   margin-left: 2vw;
   // width: 100%;
-  tr {
-    height: 50px;
-    td {
-      padding: 2px;
+  .row {
+    min-height: 3em;
+    padding-bottom: 3vh;
+    // td {
+    //   padding: 2px;
+    // }
+    .cell {
+      @media screen and (min-width: 611px) {
+        float: left;
+      }
     }
   }
+
   .company-logo {
+    min-width: 50px;
+    min-height: initial;
+    margin: auto 5px;
     &:hover {
       img {
         width: 50px;
       }
     }
     img {
+      // float: right;
       width: 20px;
       transition: width 0.3s ease-in-out;
       &:focus {
@@ -37,5 +58,8 @@ table {
   .title {
     font-weight: bold;
     letter-spacing: 3px;
+  }
+  .description {
+    margin: auto 1em;
   }
 }
