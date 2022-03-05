@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Comfortaa";
+  margin: 0;
+  color: #fff7f7;
+  background-color: #1e1e1e;
+}
+
+main {
+  margin-top: 1em;
+}
+
+.about {
+  padding: 5px;
+  margin: 15vh auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 0.67em auto;
+  font-family: "Overpass Mono";
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+
+.my-img {
+  padding: 1em;
+  border-radius: 50%;
+  width: calc(100% - 200px);
+  max-width: 250px;
+}
+
+p {
+  font-family: "Comfortaa";
+  font-size: medium;
+}
+
+#linkedin {
+    background-color: white;
+    border-radius: 5px;
+  
+}
+
+svg {
+	width: 45px;
+	margin: 3vmax;
+}
+
+.social a {
+	display: hidden;
+	color: #00000000;
+}
+
+
+@media screen and (max-width: 992px) {
+	.experience {
+		margin: 10vh 2vw;
+	}
+}
+@media screen and (min-width: 992px) {
+	.experience {
+		margin: 10vh 10vh 10vh calc(50% - 30vw);
+	}
+}
+
+.table {
+  margin-left: 2vw;
+}
+
+.table .row {
+    min-height: 3em;
+    padding-bottom: 3vh;
+}
+
+@media screen and (min-width: 611px) {
+	.cell {
+		float: left;
+	  }
+}
+
+
+.company-logo {
+    min-width: 50px;
+    min-height: initial;
+    margin: auto 5px;
+}
+
+.company-logo:hover img {
+	width: 50px;
+}
+
+.logo-img {
+  // float: right;
+  width: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.logo-img:focus {
+	width: 50px;
+}
+
+.title {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.description {
+    margin: auto 1em;
+}
+
+footer {
+  padding-top: 5px;
+  background-color: black;
+  height: 2em;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+}
