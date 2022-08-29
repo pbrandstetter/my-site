@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <title>Sebastian Brandstetter</title>
 </head>
@@ -27,26 +28,30 @@
         <h1>Sebastian Brandstetter</h1>
       </div>
     </article>
-    <div class="banner"></div>
     <picture class="banner">
       <source srcset="assets/images/banner_Phone.jpg" media="(max-width: 568px)">
       <source srcset="assets/images/banner_Small.jpg" media="(max-width: 854px)">
       <source srcset="assets/images/banner_Medium.jpg" media="(max-width: 1366px)">
       <source srcset="assets/images/banner_Large.jpg" media="(max-width: 1800px)">
+      <source srcset="assets/images/banner.jpg" media="(min-width: 1799px)">
       <img src="assets/images/banner_Small.jpg" alt="Banner">
     </picture>
 
     <article id="about" class="about">
       <h2>About</h2>
-      Hi! 🎵 ¡Hola! 🎵 Hello!<br />
-      Mein Name ist Sebastian, meine Freunde nennen mich auch Basti oder Brandy, und ich bin leidenschaftlicher Musiker!
-      <br />
-      <br />
-      Als Gitarrist und Posaunist habe ich bereits in einigen Musikgruppen mitgespielt, nun habe ich einen eigenen Song
-      geschrieben.
-      <br />
-      Jetzt Anhören:
-      <br />
+      <p class="personal">
+        Hi! 🎵 ¡Hola! 🎵 Hello!<br />
+        Mein Name ist Sebastian, meine Freunde nennen mich auch Basti oder Brandy, und ich bin leidenschaftlicher
+        Musiker!
+        <br />
+        <br />
+        Als Gitarrist und Posaunist habe ich bereits in einigen Musikgruppen mitgespielt, nun habe ich einen eigenen
+        Song
+        geschrieben.
+        <br /><br />
+        Jetzt reinhören:
+        <br />
+      </p>
       <iframe class="youtube" src="https://www.youtube.com/embed/tHp5pImBn3o" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -55,16 +60,44 @@
       <h2>Photos</h2>
       <div class="gallery">
         <div class="image first">
-          <img src="assets/images/gallery/001.jpg" alt="Me playing guitar">
+          <picture>
+            <source srcset="assets/images/gallery/001_Phone.jpg" media="(max-width: 568px)">
+            <source srcset="assets/images/gallery/001_Small.jpg" media="(max-width: 854px)">
+            <source srcset="assets/images/gallery/001_Medium.jpg" media="(max-width: 1366px)">
+            <source srcset="assets/images/gallery/001_Large.jpg" media="(max-width: 1800px)">
+            <source srcset="assets/images/gallery/001.jpg" media="(min-width: 1800px)">
+            <img src="assets/images/gallery/001_Small.jpg" alt="Me playing guitar">
+          </picture>
         </div>
         <div class="image second">
-          <img src="assets/images/gallery/002.jpg" alt="Me playing trombone">
+          <picture>
+            <source srcset="assets/images/gallery/002_Phone.jpg" media="(max-width: 568px)">
+            <source srcset="assets/images/gallery/002_Small.jpg" media="(max-width: 854px)">
+            <source srcset="assets/images/gallery/002_Medium.jpg" media="(max-width: 1366px)">
+            <source srcset="assets/images/gallery/002_Large.jpg" media="(max-width: 1800px)">
+            <source srcset="assets/images/gallery/002.jpg" media="(min-width: 1800px)">
+            <img src="assets/images/gallery/002_Small.jpg" alt="Me playing trombone">
+          </picture>
         </div>
         <div class="image third">
-          <img src="assets/images/gallery/003.webp" alt="Me with a cow">
+          <picture>
+            <source srcset="assets/images/gallery/003_Phone.jpeg" media="(max-width: 568px)">
+            <source srcset="assets/images/gallery/003_Small.jpeg" media="(max-width: 854px)">
+            <source srcset="assets/images/gallery/003_Medium.jpeg" media="(max-width: 1366px)">
+            <source srcset="assets/images/gallery/003_Large.jpeg" media="(max-width: 1800px)">
+            <source srcset="assets/images/gallery/003.webp" media="(min-width: 1800px)">
+            <img src="assets/images/gallery/003_Small.jpeg" alt="Me with a cow">
+          </picture>
         </div>
         <div class="image fourth">
-          <img src="assets/images/gallery/004.png" alt="Me playing trombone in a band">
+          <picture>
+            <source srcset="assets/images/gallery/004_Phone.png" media="(max-width: 568px)">
+            <source srcset="assets/images/gallery/004_Small.png" media="(max-width: 854px)">
+            <source srcset="assets/images/gallery/004_Medium.png" media="(max-width: 1366px)">
+            <source srcset="assets/images/gallery/004_Large.png" media="(max-width: 1800px)">
+            <source srcset="assets/images/gallery/004.png" media="(min-width: 1800px)">
+            <img src="assets/images/gallery/004_Small.png" alt="Me playing trombone">
+          </picture>
         </div>
       </div>
       </div>

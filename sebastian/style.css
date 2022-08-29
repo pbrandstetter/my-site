@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   background-color: #ffffff;
   color: #000000;
 }
@@ -38,13 +38,15 @@ body {
   flex-direction: row-reverse;
   align-content: flex-start;
   overflow: hidden;
+  object-fit: cover;
+  object-position: 90% 50%;
 }
 .banner img {
+  object-fit: cover;
+  object-position: 90% 50%;
   right: 0;
   width: 100%;
-  min-width: 560px;
-  object-fit: none;
-  object-position: 90% 50%;
+  min-width: 650px;
   box-shadow: 10px 10px #000000;
 }
 
@@ -87,6 +89,10 @@ nav ul a :visited {
 .contact {
     margin: 10vh calc(50% - 30vw) 10vh calc(50% - 30vw);
   }
+}
+
+.personal {
+  font-size: large;
 }
 
 .gallery {
@@ -136,7 +142,7 @@ nav ul a :visited {
 .youtube {
   margin: 6px 0;
   width: 100%;
-  height: 56.25vw;
+  height: 39.375vw;
 }
 
 .contact {
@@ -148,7 +154,6 @@ nav ul a :visited {
   flex-direction: column;
 }
 .contact .accessibility a {
-  transition: all 2s ease-in-out;
   display: flex;
   align-items: center;
   flex-direction: column;
